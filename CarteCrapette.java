@@ -1,4 +1,4 @@
-package projet_java.crapet;
+package projet_java.crapet.java_crapette;
 
 
 import java.io.File;
@@ -12,7 +12,7 @@ import java.awt.Image;
 *  @version 1 du 09/11/2023
 */
 
-public class Carte
+public class CarteCrapette
 {
     private static  int 				num = 0;
 	private static  String[]			typeSigne = {"Coeur", "Pique", "Trêfle", "Carreau", "Enseigne"};
@@ -28,7 +28,7 @@ public class Carte
 	private  		int 				posY;
 	private	 		Image				image;
 
-    public Carte()
+    public CarteCrapette()
     {
 		this.ident = this.num;
 		this.num = this.num + 1;
@@ -125,12 +125,12 @@ public class Carte
 
     public static void main(String[] argv)
 	{
-		Carte        cart1, cart2, cart3, CarTempo;
+		CarteCrapette        cart1, cart2, cart3, CarTempo;
 		//cart1 = new Carte();
 
         for (int index = 0; index < 77; index++) 
         {
-            CarTempo = new Carte();
+            CarTempo = new CarteCrapette();
             System.out.print(CarTempo);
         }
 
